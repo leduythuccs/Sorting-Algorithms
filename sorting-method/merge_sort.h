@@ -8,7 +8,7 @@ void merge_sort_DnC(int a[], int l, int r) {
     int mid = (l + r) >> 1;
     merge_sort_DnC(a, l, mid);
     merge_sort_DnC(a, mid + 1, r);
-    std::inplace_merge(a, a + mid + 1, a + r + 1);
+    std::inplace_merge(a + l, a + mid + 1, a + r + 1);
 }
 void merge_sort(int a[], int n) {
     merge_sort_DnC(a, 0, n - 1);
