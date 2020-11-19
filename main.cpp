@@ -24,7 +24,7 @@ std::string sort_names[] = {
 
 int dataSizes[] = {3000, 10000, 30000, 100000, 300000};
 int a[300000], b[300000], c[300000];
-// int dataSizes[] = {100000};
+// int dataSizes[] = {3000, 10000};
 
 // RANDOM_DATA 0
 // SORTED_DATA 1
@@ -60,8 +60,8 @@ int main() {
                 sort_methods[i](c, n);
                 int64_t running_time = timer.getRunningTime();
                 std::cout << get_name_data_type(data_type) << ',' << n << ',' << sort_names[i] << ',' << running_time << '\n';
-                if (running_time > 1e6)
-                    std::cerr << "Bigger than 1 second: " << running_time / 1e6 << '\n';
+                if (running_time > 1e9)
+                    std::cerr << "Bigger than 1 second: " << running_time / 1e9 << '\n';
 #ifdef TESTING
                 for (int i = 0; i < n; ++i)
                     assert(c[i] == b[i]);
@@ -70,7 +70,7 @@ int main() {
         }
     }
     int64_t running_time = whole.getRunningTime();
-    std::cerr << "Finished in " << running_time / 1000.0 << " miliseconds\n";
-    std::cerr << "Finished in " << running_time / 1000000.0 << " seconds";
+    std::cerr << "Finished in " << running_time / 1000000.0 << " miliseconds\n";
+    std::cerr << "Finished in " << running_time / 1000000000.0 << " seconds";
     return 0;
 }
