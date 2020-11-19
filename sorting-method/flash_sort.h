@@ -13,6 +13,8 @@ void flash_sort(int a[], int n) {
         if (Mx < a[i]) Mx = a[i];
         if (Mn > a[i]) Mn = a[i];
     }
+    if (Mx == Mn)
+        return;
 #define getK(x) (m - 1) * (x - Mn) / (Mx - Mn)
     for (int i = 0; i < m; ++i)
         ++__L[getK(a[i])];
