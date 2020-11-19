@@ -1,8 +1,9 @@
+#include <stdio.h>
+
 #include <algorithm>
 #include <cassert>
 #include <iostream>
 #include <string>
-#include <stdio.h>
 
 #include "helper/DataGenerator.cpp"
 #include "helper/timer.h"
@@ -14,14 +15,12 @@ sort_ptr sort_methods[] = {
     selection_sort, insertion_sort, binary_insertion_sort,
     bubble_sort, shaker_sort, shell_sort,
     heap_sort, merge_sort, quick_sort,
-    couting_sort, radix_sort, flash_sort
-};
+    couting_sort, radix_sort, flash_sort};
 std::string sort_names[] = {
-    "selection_sort", "insertion_sort", "binary_insertion_sort", 
-    "bubble_sort", "shaker_sort", "shell_sort", 
-    "heap_sort", "merge_sort", "quick_sort", 
-    "couting_sort", "radix_sort", "flash_sort"
-};
+    "selection_sort", "insertion_sort", "binary_insertion_sort",
+    "bubble_sort", "shaker_sort", "shell_sort",
+    "heap_sort", "merge_sort", "quick_sort",
+    "couting_sort", "radix_sort", "flash_sort"};
 
 int dataSizes[] = {3000, 10000, 30000, 100000, 300000};
 int a[300000], b[300000], c[300000];
@@ -54,7 +53,7 @@ int main() {
             copy_array(a, b, n);
             std::sort(b, b + n);
 #endif
-            for (int i = 0; i <  N_SORT; ++i) {
+            for (int i = 0; i < N_SORT; ++i) {
                 std::cerr << "doing " << sort_names[i] << '\n';
                 copy_array(a, c, n);
                 timer.start();
@@ -69,7 +68,6 @@ int main() {
 #endif
             }
         }
-        
     }
     int64_t running_time = whole.getRunningTime();
     std::cerr << "Finished in " << running_time / 1000.0 << " miliseconds\n";
