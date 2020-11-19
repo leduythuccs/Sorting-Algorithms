@@ -1,0 +1,240 @@
+Random,3000,selection_sort,2992
+Random,3000,insertion_sort,1000
+Random,3000,binary_insertion_sort,997
+Random,3000,bubble_sort,7978
+Random,3000,shaker_sort,4954
+Random,3000,shell_sort,0
+Random,3000,heap_sort,0
+Random,3000,merge_sort,0
+Random,3000,quick_sort,1000
+Random,3000,couting_sort,0
+Random,3000,radix_sort,3985
+Random,3000,flash_sort,0
+Random,10000,selection_sort,27961
+Random,10000,insertion_sort,11008
+Random,10000,binary_insertion_sort,5985
+Random,10000,bubble_sort,119634
+Random,10000,shaker_sort,64469
+Random,10000,shell_sort,1433
+Random,10000,heap_sort,1000
+Random,10000,merge_sort,1029
+Random,10000,quick_sort,999
+Random,10000,couting_sort,0
+Random,10000,radix_sort,2025
+Random,10000,flash_sort,0
+Random,30000,selection_sort,231200
+Random,30000,insertion_sort,75851
+Random,30000,binary_insertion_sort,66229
+Random,30000,bubble_sort,1270961
+Random,30000,shaker_sort,785213
+Random,30000,shell_sort,3361
+Random,30000,heap_sort,2031
+Random,30000,merge_sort,4027
+Random,30000,quick_sort,3989
+Random,30000,couting_sort,0
+Random,30000,radix_sort,4023
+Random,30000,flash_sort,999
+Random,100000,selection_sort,2531205
+Random,100000,insertion_sort,952873
+Random,100000,binary_insertion_sort,684382
+Random,100000,bubble_sort,14544462
+Random,100000,shaker_sort,9334970
+Random,100000,shell_sort,9961
+Random,100000,heap_sort,9973
+Random,100000,merge_sort,16939
+Random,100000,quick_sort,10006
+Random,100000,couting_sort,0
+Random,100000,radix_sort,7978
+Random,100000,flash_sort,7023
+Random,300000,selection_sort,23700805
+Random,300000,insertion_sort,8694959
+Random,300000,binary_insertion_sort,7333434
+Random,300000,bubble_sort,131833172
+Random,300000,shaker_sort,80617039
+Random,300000,shell_sort,30952
+Random,300000,heap_sort,30945
+Random,300000,merge_sort,42933
+Random,300000,quick_sort,26969
+Random,300000,couting_sort,1023
+Random,300000,radix_sort,17953
+Random,300000,flash_sort,19946
+Sorted,3000,selection_sort,2992
+Sorted,3000,insertion_sort,0
+Sorted,3000,binary_insertion_sort,0
+Sorted,3000,bubble_sort,0
+Sorted,3000,shaker_sort,0
+Sorted,3000,shell_sort,0
+Sorted,3000,heap_sort,0
+Sorted,3000,merge_sort,0
+Sorted,3000,quick_sort,0
+Sorted,3000,couting_sort,0
+Sorted,3000,radix_sort,0
+Sorted,3000,flash_sort,997
+Sorted,10000,selection_sort,26961
+Sorted,10000,insertion_sort,0
+Sorted,10000,binary_insertion_sort,0
+Sorted,10000,bubble_sort,0
+Sorted,10000,shaker_sort,0
+Sorted,10000,shell_sort,0
+Sorted,10000,heap_sort,997
+Sorted,10000,merge_sort,997
+Sorted,10000,quick_sort,997
+Sorted,10000,couting_sort,0
+Sorted,10000,radix_sort,0
+Sorted,10000,flash_sort,0
+Sorted,30000,selection_sort,217892
+Sorted,30000,insertion_sort,0
+Sorted,30000,binary_insertion_sort,997
+Sorted,30000,bubble_sort,0
+Sorted,30000,shaker_sort,0
+Sorted,30000,shell_sort,0
+Sorted,30000,heap_sort,1990
+Sorted,30000,merge_sort,1994
+Sorted,30000,quick_sort,2000
+Sorted,30000,couting_sort,0
+Sorted,30000,radix_sort,998
+Sorted,30000,flash_sort,1027
+Sorted,100000,selection_sort,2529927
+Sorted,100000,insertion_sort,0
+Sorted,100000,binary_insertion_sort,996
+Sorted,100000,bubble_sort,0
+Sorted,100000,shaker_sort,0
+Sorted,100000,shell_sort,995
+Sorted,100000,heap_sort,5018
+Sorted,100000,merge_sort,7014
+Sorted,100000,quick_sort,5983
+Sorted,100000,couting_sort,0
+Sorted,100000,radix_sort,2013
+Sorted,100000,flash_sort,3991
+Sorted,300000,selection_sort,22829142
+Sorted,300000,insertion_sort,0
+Sorted,300000,binary_insertion_sort,5033
+Sorted,300000,bubble_sort,0
+Sorted,300000,shaker_sort,0
+Sorted,300000,shell_sort,1993
+Sorted,300000,heap_sort,15993
+Sorted,300000,merge_sort,24932
+Sorted,300000,quick_sort,15001
+Sorted,300000,couting_sort,0
+Sorted,300000,radix_sort,5019
+Sorted,300000,flash_sort,10998
+Reverse,3000,selection_sort,2994
+Reverse,3000,insertion_sort,999
+Reverse,3000,binary_insertion_sort,1984
+Reverse,3000,bubble_sort,7979
+Reverse,3000,shaker_sort,7025
+Reverse,3000,shell_sort,0
+Reverse,3000,heap_sort,0
+Reverse,3000,merge_sort,0
+Reverse,3000,quick_sort,998
+Reverse,3000,couting_sort,0
+Reverse,3000,radix_sort,0
+Reverse,3000,flash_sort,0
+Reverse,10000,selection_sort,26927
+Reverse,10000,insertion_sort,19946
+Reverse,10000,binary_insertion_sort,13998
+Reverse,10000,bubble_sort,76571
+Reverse,10000,shaker_sort,80175
+Reverse,10000,shell_sort,0
+Reverse,10000,heap_sort,0
+Reverse,10000,merge_sort,997
+Reverse,10000,quick_sort,996
+Reverse,10000,couting_sort,0
+Reverse,10000,radix_sort,0
+Reverse,10000,flash_sort,0
+Reverse,30000,selection_sort,226091
+Reverse,30000,insertion_sort,176519
+Reverse,30000,binary_insertion_sort,116191
+Reverse,30000,bubble_sort,753089
+Reverse,30000,shaker_sort,703271
+Reverse,30000,shell_sort,0
+Reverse,30000,heap_sort,1994
+Reverse,30000,merge_sort,1992
+Reverse,30000,quick_sort,2027
+Reverse,30000,couting_sort,0
+Reverse,30000,radix_sort,999
+Reverse,30000,flash_sort,997
+Reverse,100000,selection_sort,2543824
+Reverse,100000,insertion_sort,1926157
+Reverse,100000,binary_insertion_sort,1412244
+Reverse,100000,bubble_sort,10072648
+Reverse,100000,shaker_sort,8129968
+Reverse,100000,shell_sort,2992
+Reverse,100000,heap_sort,6990
+Reverse,100000,merge_sort,16954
+Reverse,100000,quick_sort,8975
+Reverse,100000,couting_sort,999
+Reverse,100000,radix_sort,1984
+Reverse,100000,flash_sort,3989
+Reverse,300000,selection_sort,26816959
+Reverse,300000,insertion_sort,18687813
+Reverse,300000,binary_insertion_sort,15579470
+Reverse,300000,bubble_sort,78228495
+Reverse,300000,shaker_sort,69439009
+Reverse,300000,shell_sort,19977
+Reverse,300000,heap_sort,16991
+Reverse,300000,merge_sort,23940
+Reverse,300000,quick_sort,14959
+Reverse,300000,couting_sort,0
+Reverse,300000,radix_sort,5029
+Reverse,300000,flash_sort,9029
+Nearly sorted,3000,selection_sort,2992
+Nearly sorted,3000,insertion_sort,0
+Nearly sorted,3000,binary_insertion_sort,0
+Nearly sorted,3000,bubble_sort,4032
+Nearly sorted,3000,shaker_sort,0
+Nearly sorted,3000,shell_sort,0
+Nearly sorted,3000,heap_sort,995
+Nearly sorted,3000,merge_sort,0
+Nearly sorted,3000,quick_sort,0
+Nearly sorted,3000,couting_sort,0
+Nearly sorted,3000,radix_sort,0
+Nearly sorted,3000,flash_sort,0
+Nearly sorted,10000,selection_sort,26959
+Nearly sorted,10000,insertion_sort,0
+Nearly sorted,10000,binary_insertion_sort,0
+Nearly sorted,10000,bubble_sort,39937
+Nearly sorted,10000,shaker_sort,999
+Nearly sorted,10000,shell_sort,997
+Nearly sorted,10000,heap_sort,0
+Nearly sorted,10000,merge_sort,997
+Nearly sorted,10000,quick_sort,997
+Nearly sorted,10000,couting_sort,0
+Nearly sorted,10000,radix_sort,1002
+Nearly sorted,10000,flash_sort,0
+Nearly sorted,30000,selection_sort,221395
+Nearly sorted,30000,insertion_sort,1008
+Nearly sorted,30000,binary_insertion_sort,0
+Nearly sorted,30000,bubble_sort,317553
+Nearly sorted,30000,shaker_sort,0
+Nearly sorted,30000,shell_sort,990
+Nearly sorted,30000,heap_sort,995
+Nearly sorted,30000,merge_sort,1994
+Nearly sorted,30000,quick_sort,1994
+Nearly sorted,30000,couting_sort,0
+Nearly sorted,30000,radix_sort,1000
+Nearly sorted,30000,flash_sort,997
+Nearly sorted,100000,selection_sort,2529387
+Nearly sorted,100000,insertion_sort,0
+Nearly sorted,100000,binary_insertion_sort,1997
+Nearly sorted,100000,bubble_sort,1343887
+Nearly sorted,100000,shaker_sort,1994
+Nearly sorted,100000,shell_sort,1995
+Nearly sorted,100000,heap_sort,4985
+Nearly sorted,100000,merge_sort,7979
+Nearly sorted,100000,quick_sort,5018
+Nearly sorted,100000,couting_sort,0
+Nearly sorted,100000,radix_sort,997
+Nearly sorted,100000,flash_sort,4023
+Nearly sorted,300000,selection_sort,22756242
+Nearly sorted,300000,insertion_sort,997
+Nearly sorted,300000,binary_insertion_sort,5020
+Nearly sorted,300000,bubble_sort,3881871
+Nearly sorted,300000,shaker_sort,2994
+Nearly sorted,300000,shell_sort,3027
+Nearly sorted,300000,heap_sort,14961
+Nearly sorted,300000,merge_sort,22985
+Nearly sorted,300000,quick_sort,15955
+Nearly sorted,300000,couting_sort,0
+Nearly sorted,300000,radix_sort,5020
+Nearly sorted,300000,flash_sort,10004
