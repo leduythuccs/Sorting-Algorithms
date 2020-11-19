@@ -9,7 +9,7 @@ void insertion_sort(int a[], int n) {
         int j = i - 1;
         for (; j >= 0 && a[j] > cur; --j)
             a[j + 1] = a[j];
-        a[j] = cur;
+        a[j + 1] = cur;
     }
 }
 
