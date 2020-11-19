@@ -28,8 +28,7 @@ void flash_sort(int a[], int n) {
         while (i >= __L[k]) 
             k = getK(a[++i]);
         int z = a[i];
-        int _k = k;
-        while (i < __L[_k]) {
+        while (i != __L[k]) {
             k = getK(z);
             int y = a[__L[k] - 1];
             a[--__L[k]] = z;
