@@ -3,8 +3,6 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
-using namespace std;
-
 template <class T>
 void HoanVi(T &a, T &b) {
     T x = a;
@@ -49,19 +47,24 @@ void GenerateNearlySortedData(int a[], int n) {
         HoanVi(a[r1], a[r2]);
     }
 }
-
-void GenerateData(int a[], int n, int dataType) {
-    switch (dataType) {
-        case 0:  // ngẫu nhiên
+enum DataType {
+    RANDOM_DATA,
+    SORTED_DATA,
+    REVERSE_DATA,
+    NEARLY_SORTED_DATA
+};
+void GenerateData(int a[], int n, DataType typ) {
+    switch (typ) {
+        case RANDOM_DATA:  // ngẫu nhiên
             GenerateRandomData(a, n);
             break;
-        case 1:  // có thứ tự
+        case SORTED_DATA:  // có thứ tự
             GenerateSortedData(a, n);
             break;
-        case 2:  // có thứ tự ngược
+        case REVERSE_DATA:  // có thứ tự ngược
             GenerateReverseData(a, n);
             break;
-        case 3:  // gần như có thứ tự
+        case NEARLY_SORTED_DATA:  // gần như có thứ tự
             GenerateNearlySortedData(a, n);
             break;
         default:
