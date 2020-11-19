@@ -47,13 +47,11 @@ void GenerateNearlySortedData(int a[], int n) {
         HoanVi(a[r1], a[r2]);
     }
 }
-enum DataType {
-    RANDOM_DATA,
-    SORTED_DATA,
-    REVERSE_DATA,
-    NEARLY_SORTED_DATA
-};
-void GenerateData(int a[], int n, DataType typ) {
+#define RANDOM_DATA 0
+#define SORTED_DATA 1
+#define REVERSE_DATA 2
+#define NEARLY_SORTED_DATA 3
+void GenerateData(int a[], int n, int typ) {
     switch (typ) {
         case RANDOM_DATA:  // ngẫu nhiên
             GenerateRandomData(a, n);
