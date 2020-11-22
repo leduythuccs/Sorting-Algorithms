@@ -13,7 +13,22 @@ void shaker_sort(int a[], int n) {
         for (int i = R - 1; i >= L; --i)
             if (a[i] > a[i + 1])
                 swap(a[i], a[i + 1]);
+        ++L;
     }
 }
 
+void shaker_sort_optimize1(int a[], int n) {
+    bool stop = true;
+    int L = 0, R = n - 1;
+    while (L < R) {
+        for (int i = L; i < R; ++i)
+            if (a[i] > a[i + 1])
+                swap(a[i], a[i + 1]);
+        --R;
+        for (int i = R - 1; i >= L; --i)
+            if (a[i] > a[i + 1])
+                swap(a[i], a[i + 1]);
+        ++L;
+    }
+}
 #endif
