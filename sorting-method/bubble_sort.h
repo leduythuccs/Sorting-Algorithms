@@ -3,14 +3,10 @@
 
 #include "../helper/utils.h"
 void bubble_sort(int a[], int n) {
-    bool stop = true;
-    do {
-        stop = true;
+    for (int j = 1; j < n; ++j) 
         for (int i = 1; i < n; ++i)
             if (a[i - 1] > a[i]) 
-                swap(a[i - 1], a[i]),
-                stop = false;
-    } while (!stop);
+                swap(a[i - 1], a[i]);
 }
 
 #endif
