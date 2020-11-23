@@ -10,15 +10,17 @@
 #include "sorting-method/all.h"
 
 typedef void (*sort_ptr)(int[], int);
-#define N_SORT 12
+#define N_SORT 15
 sort_ptr sort_methods[] = {
-    selection_sort, insertion_sort, binary_insertion_sort,
-    bubble_sort, shaker_sort, shell_sort,
+    selection_sort, selection_sort_optimize1, insertion_sort,
+    binary_insertion_sort, bubble_sort, bubble_sort_optimize1,
+    shaker_sort, shaker_sort_optimize1, shell_sort,
     heap_sort, merge_sort, quick_sort,
     couting_sort, radix_sort, flash_sort};
 std::string sort_names[] = {
-    "selection_sort", "insertion_sort", "binary_insertion_sort",
-    "bubble_sort", "shaker_sort", "shell_sort",
+    "selection_sort", "selection_sort_optimize1", "insertion_sort",
+    "binary_insertion_sort", "bubble_sort", "bubble_sort_optimize1",
+    "shaker_sort", "shaker_sort_optimize1", "shell_sort",
     "heap_sort", "merge_sort", "quick_sort",
     "couting_sort", "radix_sort", "flash_sort"};
 
