@@ -20,7 +20,7 @@ void down_heap(int a[], int n, int i) {
 void heap_sort(int a[], int n) {
     for (int i = n / 2 - 1; i >= 0; --i)
         down_heap(a, n, i);
-    for (int i = n - 1; i >= 0; --i) {
+    for (int i = n - 1; i > 0; --i) {
         swap(a[i], a[0]);
         down_heap(a, i, 0);
     }
