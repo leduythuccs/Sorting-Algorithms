@@ -3,6 +3,7 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
+#include <algorithm>
 template <class T>
 void HoanVi(T &a, T &b) {
     T x = a;
@@ -19,6 +20,15 @@ void GenerateRandomData(int a[], int n) {
     for (int i = 0; i < n; i++) {
         a[i] = rand() % n;
     }
+}
+// Hàm phát sinh mảng dữ liệu ngẫu nhiên
+void GeneratePermutation(int a[], int n) {
+    srand((unsigned int)time(NULL));
+
+    for (int i = 0; i < n; i++) {
+        a[i] = i;
+    }
+    std::random_shuffle(a, a + n);
 }
 
 // Hàm phát sinh mảng dữ liệu có thứ tự tăng dần
@@ -51,6 +61,7 @@ void GenerateNearlySortedData(int a[], int n) {
 #define SORTED_DATA 1
 #define REVERSE_DATA 2
 #define NEARLY_SORTED_DATA 3
+#define PERMUTATION 5
 void GenerateData(int a[], int n, int typ) {
     switch (typ) {
         case RANDOM_DATA:  // ngẫu nhiên
@@ -66,6 +77,6 @@ void GenerateData(int a[], int n, int typ) {
             GenerateNearlySortedData(a, n);
             break;
         default:
-            printf("Error: unknown data type!\n");
+            GeneratePermutation(a, n);
     }
 }
