@@ -16,12 +16,12 @@ void flash_sort(int a[], int n) {
     if (Mx == Mn)
         return;
 #define getK(x) 1ll * (m - 1) * (x - Mn) / (Mx - Mn)
-    for (int i = 0; i < m; ++i)
+    for (int i = 0; i < n; ++i)
         ++__L[getK(a[i])];
     for (int i = 1; i < m; ++i)
         __L[i] += __L[i - 1];
     //step 2
-    int count = 0;
+    int count = 1;
     int i = 0;
     while (count < n) {
         int k = getK(a[i]);
