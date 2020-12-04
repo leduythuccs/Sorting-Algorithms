@@ -7,7 +7,7 @@
 
 #include "helper/DataGenerator.cpp"
 #include "helper/timer.h"
-#include "sorting-method/all.h"
+#include "sorting-methods/all.h"
 
 typedef void (*sort_ptr)(int[], int);
 #define N_SORT 15
@@ -41,7 +41,7 @@ std::string get_name_data_type(int data_type) {
         return "Nearly sorted";
     return "Reverse";
 }
-// #define TESTING
+#define TESTING
 int main() {
     freopen("output.csv", "w", stdout);
     Timer timer;
@@ -62,8 +62,6 @@ int main() {
                 sort_methods[i](c, n);
                 int64_t running_time = timer.getRunningTime();
                 std::cout << get_name_data_type(data_type) << ',' << n << ',' << sort_names[i] << ',' << running_time << '\n';
-                if (running_time > 1e9)
-                    std::cerr << "Bigger than 1 second: " << running_time / 1e9 << '\n';
 #ifdef TESTING
                 for (int i = 0; i < n; ++i)
                     assert(c[i] == b[i]);
