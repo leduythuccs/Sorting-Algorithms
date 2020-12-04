@@ -16,7 +16,8 @@ int __L[300000];
 void flash_sort(int a[], int n) {
     if (n <= 1) return;
     int m = n * 0.43;
-    if (m == 0) m = 1;
+    if (m <= 2) m = 2;
+    // int m = n;
     for (int i = 0; i < m; ++i)
         __L[i] = 0;
     int Mx = a[0], Mn = a[0];
@@ -52,7 +53,7 @@ void flash_sort(int a[], int n) {
         for (int i = __L[k] - 2; i >= __L[k - 1]; --i)
             if (a[i] > a[i + 1]) {
                 int t = a[i], j = i;
-                while (t > a[j + 1]) {a[j + 1] = a[j]; ++j;}
+                while (t > a[j + 1]) {a[j] = a[j + 1]; ++j;}
                 a[j] = t;
             }
     }
