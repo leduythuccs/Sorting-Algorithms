@@ -20,6 +20,16 @@ void quick_sort_DnC(int a[], int l, int r) {
     if (l < right)
         quick_sort_DnC(a, l, right);
 }
+
+/**
+ * Quick Sort
+ * Average complexity: O(nlogn)
+ * Best Case: O(nlogn)
+ * Worst Case: O(n^2)
+ * Space: O(logn)
+ * Not Stable
+ * Random Pivot
+ */ 
 void quick_sort(int a[], int n) {
     quick_sort_DnC(a, 0, n - 1);
 }

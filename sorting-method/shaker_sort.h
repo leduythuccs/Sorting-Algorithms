@@ -2,6 +2,14 @@
 #define SHAKER_SORT_HEADER
 
 #include "../helper/utils.h"
+/**
+ * Shaker Sort
+ * Average complexity: O(n^2)
+ * Best Case: O(n^2)
+ * Worst Case: O(n^2)
+ * Space: O(1)
+ * Stable
+ */ 
 void shaker_sort(int a[], int n) {
     int L = 0, R = n - 1;
     while (L < R) {
@@ -16,6 +24,14 @@ void shaker_sort(int a[], int n) {
     }
 }
 
+/**
+ * Shaker Sort Optimize
+ * Average complexity: O(n^2)
+ * Best Case: O(n)
+ * Worst Case: O(n^2)
+ * Space: O(1)
+ * Stable
+ */ 
 void shaker_sort_optimize1(int a[], int n) {
     bool stop = true;
     int L = 0, R = n - 1;

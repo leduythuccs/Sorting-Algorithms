@@ -10,6 +10,15 @@ void merge_sort_DnC(int a[], int l, int r) {
     merge_sort_DnC(a, mid + 1, r);
     std::inplace_merge(a + l, a + mid + 1, a + r + 1);
 }
+
+/**
+ * Merge Sort
+ * Average complexity: O(nlogn)
+ * Best Case: O(nlogn)
+ * Worst Case: O(nlogn)
+ * Space: O(n)
+ * Not Stable (Can make it Stable)
+ */
 void merge_sort(int a[], int n) {
     merge_sort_DnC(a, 0, n - 1);
 }

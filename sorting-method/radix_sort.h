@@ -19,6 +19,15 @@ void radix_sort_DnC(int a[], int level, int l, int r) {
     if (l < right)
         radix_sort_DnC(a, level - 1, l, right);
 }
+
+/**
+ * Radix Sort (MSD, Base 2)
+ * Average complexity: O(nlogk)
+ * Best Case: O(nlogk)
+ * Worst Case: O(nlogk)
+ * Space: O(logk)
+ * Not Stable (Can make it Stable)
+ */ 
 void radix_sort(int a[], int n) {
     int level = 0;
     while ((1 << level) < n) ++level;

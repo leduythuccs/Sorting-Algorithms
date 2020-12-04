@@ -17,6 +17,15 @@ void down_heap(int a[], int n, int i) {
     }
     a[i] = cur;
 }
+
+/**
+ * Heap Sort
+ * Average complexity: O(nlogn)
+ * Best Case: O(nlogn)
+ * Worst Case: O(nlogn)
+ * Space: O(1)
+ * Not Stable
+ */ 
 void heap_sort(int a[], int n) {
     for (int i = n / 2 - 1; i >= 0; --i)
         down_heap(a, n, i);

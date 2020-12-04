@@ -3,6 +3,16 @@
 
 #include "../helper/utils.h"
 int __L[300000];
+
+/**
+ * Flash Sort
+ * Average complexity: O(n + m)
+ * Best Case: O(n + m)
+ * Worst Case: O(n^2)
+ * Space: O(m)
+ * Note: m = 0.43n
+ * Not Stable
+ */ 
 void flash_sort(int a[], int n) {
     if (n <= 1) return;
     int m = n * 0.43;

@@ -3,6 +3,14 @@
 
 #include "../helper/utils.h"
 
+/**
+ * Section Sort
+ * Average complexity: O(n^2)
+ * Best Case: O(n^2)
+ * Worst Case: O(n^2)
+ * Space: O(1)
+ * Stable
+ */ 
 void selection_sort(int a[], int n) {
     for (int i = 0; i < n - 1; ++i) {
         int cur_min = i;
@@ -13,6 +21,14 @@ void selection_sort(int a[], int n) {
     }
 }
 
+/**
+ * Section Sort Optimize
+ * Average complexity: O(n^2)
+ * Best Case: O(n^2)
+ * Worst Case: O(n^2)
+ * Space: O(1)
+ * Not Stable (Can make it Stable)
+ */ 
 void selection_sort_optimize1(int a[], int n) {
     int r = n;
     for (int i = 0; i < r - 1; ++i) {

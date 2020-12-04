@@ -3,6 +3,14 @@
 
 #include "../helper/utils.h"
 
+/**
+ * Insertion Sort
+ * Average complexity: O(n^2)
+ * Best Case: O(n)
+ * Worst Case: O(n^2)
+ * Space: O(1)
+ * Stable
+ */ 
 void insertion_sort(int a[], int n) {
     for (int i = 1; i < n; ++i) {
         int cur = a[i];

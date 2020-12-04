@@ -3,6 +3,15 @@
 
 #include "../helper/utils.h"
 #include <algorithm>
+
+/**
+ * Binary Insertion Sort
+ * Average complexity: O(n^2)
+ * Best Case: O(nlogn)
+ * Worst Case: O(n^2)
+ * Space: O(1)
+ * Stable
+ */ 
 void binary_insertion_sort(int a[], int n) {
     for (int i = 1; i < n; ++i) {
         int l = std::upper_bound(a, a + i, a[i]) - a;
