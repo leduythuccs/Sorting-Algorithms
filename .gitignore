@@ -2,7 +2,6 @@
 compile_command.txt
 getData.cpp
 optimize.cpp
-output2.csv
 formatCMP.csv
 format.csv
 getData2.cpp
