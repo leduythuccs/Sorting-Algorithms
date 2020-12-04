@@ -5,7 +5,8 @@
 int __L[300000];
 void flash_sort(int a[], int n) {
     if (n <= 1) return;
-    int m = n;
+    int m = n * 0.43;
+    if (m == 0) m = 1;
     for (int i = 0; i < m; ++i)
         __L[i] = 0;
     int Mx = a[0], Mn = a[0];
