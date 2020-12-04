@@ -10,7 +10,6 @@
 #include "sorting-methods/all.h"
 
 typedef void (*sort_ptr)(int[], int);
-#define N_SORT 15
 sort_ptr sort_methods[] = {
     selection_sort, selection_sort_optimize1, insertion_sort,
     binary_insertion_sort, bubble_sort, bubble_sort_optimize1,
@@ -47,6 +46,8 @@ int main() {
     Timer timer;
     Timer whole;
     whole.start();
+    int n_sorts = sizeof(sort_methods) / sizeof(sort_methods[0]);
+
     for (int data_type = 0; data_type < 4; ++data_type) {
         for (auto n : dataSizes) {
             std::cerr << "n = " << n << '\n';
@@ -55,7 +56,7 @@ int main() {
             copy_array(a, b, n);
             std::sort(b, b + n);
 #endif
-            for (int i = 0; i < N_SORT; ++i) {
+            for (int i = 0; i < n_sorts; ++i) {
                 std::cerr << "doing " << sort_names[i] << '\n';
                 copy_array(a, c, n);
                 timer.start();
