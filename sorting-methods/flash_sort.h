@@ -33,7 +33,7 @@ void flash_sort(int a[], int n) {
     for (int i = 1; i < m; ++i)
         __L[i] += __L[i - 1];
     //step 2
-    int count = 1;
+    int count = 0;
     int i = 0;
     while (count < n) {
         int k = getK(a[i]);
